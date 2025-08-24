@@ -11,46 +11,91 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-         <!-- Botão que leva pra página principal.-->
-         <div class="container">
-            <a class="navbar-brand" href="#"> 
-              <img src="img\tohrudance.gif" height="40"> Emina</a>          
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/tohrudance.gif" height="40" class="me-2"> 
+      Emina
+    </a>
+
+    <!-- Barra de pesquisa -->
+    <form class="d-flex mx-auto" role="search" style="max-width: 300px;">
+      <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+
+    <!-- Área logado -->
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item me-3">
+        <a class="nav-link" href="#"><i class="bi bi-plus-square fs-5"></i> Novo Post</a>
+      </li>
+
+      <!-- Dropdown do usuário -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="img/neymarstop.jpg" class="rounded-circle me-2" height="30" width="30" alt="Avatar do usuário">
+          <span class="fw-bold">Dalila</span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle me-2"></i> Meu Perfil</a></li>
+          <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i> Configurações</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-box-arrow-right me-2"></i> Sair</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+        
+        <!-- Post 1 -->
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">
+                <img src="img/einerd.jpg" class="rounded-circle me-2" height="30" width="30" alt="Avatar do usuário"> Ei nerd</h5>
+            <p class="card-text text-muted">
+              EU NASCI PARA VER O DARKSIDE VENDENDO MACDONALTS KAKAKAKAKASK
+            </p>
+                <img src="img/darksidemac.jpg" class="img-fluid rounded mx-auto d-block" style="max-width: 400px;" alt="Darkside Vendendo McDonald's">
+
+            <button class="btn btn-sm btn-outline-primary me-2">Curtir</button>
+            <button class="btn btn-sm btn-outline-secondary">Comentar</button>
           </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Botões do Navbar com espaçamento maior e ícones em h3 -->
-
-            <ul class="navbar-nav me-4">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-translate fs-5"></i>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>  <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
-                        <label class="form-check-label" for="checkNativeSwitch">
-                          Traduzir Automaticamente
-                        </label></li>
-                    <li><a class="dropdown-item" href="#">Dar Feedback Sobre a Tradução</a></li>
-                  </ul>
-                </li>
-              </ul>
-        
-            <button type="button" class="btn btn-link p-0 link-body-emphasis me-4">
-                <i class="bi bi-search fs-5"></i>
-            </button>
         </div>
-        <!--Barra de pesquisa-->
-        <div class="container">
-        <form class="d-flex ms-auto" role="search" style="max-width: 300px;">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        
+
+        <!-- Post 2 -->
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Segundo Post</h5>
+            <p class="card-text text-muted">
+              Outro conteúdo de post para testar a rolagem.
+            </p>
+            <button class="btn btn-sm btn-outline-primary me-2">Curtir</button>
+            <button class="btn btn-sm btn-outline-secondary">Comentar</button>
+          </div>
         </div>
-      </nav>
 
+        <!-- Post 3 -->
+        <div class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Terceiro Post</h5>
+            <p class="card-text text-muted">
+              Quando tiver vários, o container vai permitir rolar a página.
+            </p>
+            <button class="btn btn-sm btn-outline-primary me-2">Curtir</button>
+            <button class="btn btn-sm btn-outline-secondary">Comentar</button>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
